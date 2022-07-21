@@ -61,4 +61,3 @@ It'll then be deployed on our Serverless GPU cluster and callable with any of ou
 - [Go](https://github.com/bananaml/banana-go)
 
 Use Banana for scale!
- 
