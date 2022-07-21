@@ -1,4 +1,4 @@
 sanic
-transformers
+git+https://github.com/huggingface/transformers
 accelerate
 torch
