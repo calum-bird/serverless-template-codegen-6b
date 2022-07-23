@@ -34,7 +34,7 @@ def inference(model_inputs:dict) -> dict:
         return {'message': "No prompt provided"}
     
     # Tokenize inputs
-    input_tokens = tokenizer(text, return_tensors="pt").to(device)
+    input_tokens = tokenizer(prompt, return_tensors="pt").to(device)
 
     # Run the model
     output = model.generate(input_tokens)
