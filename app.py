@@ -37,7 +37,7 @@ def inference(model_inputs:dict) -> dict:
     input_tokens = tokenizer(prompt, return_tensors="pt").to(device)
 
     # Run the model
-    output = model.generate(input_tokens)
+    generated_ids = model.generate(input_tokens)
 
     # Decode output tokens
     output_text = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
